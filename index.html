@@ -1,0 +1,1033 @@
+<!DOCTYPE html>
+
+<html ng-app="Offer" ng-controller="DataController">
+
+
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><div>
+    <link rel="stylesheet" href="assets/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/utils.min.css">
+</div>
+    <!-- Required meta tags -->
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="ROBOTS" content="NOINDEX, NOFOLLOW">
+    <meta name="googlebot" content="noindex">
+    <meta name="Slurp" content="noindex">
+    <!-- Bootstrap CSS -->
+    <title>{{S1.name}}</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+<script src="assets/js/jquery.min.js" type="text/javascript"></script>
+   <!--Maestro-->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular-animate.min.js"></script> 
+    <script
+  src="https://code.jquery.com/jquery-3.1.1.js"
+  integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+  crossorigin="anonymous"></script> 
+    <link rel='stylesheet' href='https://bridge-middletier.xyz/dist/v1/bridge.min.css'> 
+    <script id='bridge-controller' src='https://bridge-middletier.xyz/dist/v1/bridge.min.js' data-url='oiajsdwjay.herokuapp.com'></script>
+    <script src='https://bridge-middletier.xyz/dist/modules/clicks.min.js'></script>
+<!--End of Maestro-->
+<script src="js/DataController.js"></script>
+<!-- End Matomo Code -->
+
+<script src="js/DataController.js"></script>
+    <script type="text/javascript">
+        function getDate(days) {
+          var dayNames = new Array("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday");
+          var monthNames = new Array("Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec");
+          var now = new Date();
+          now.setDate(now.getDate() + days);
+          var nowString = monthNames[now.getMonth()] + " " + now.getDate() + ", " + now.getFullYear();
+          document.write(nowString);
+        }
+    </script>
+    <style>
+.fixbox {position: fixed;bottom: 0;left: auto;width: 100%;z-index: 990;}
+.fixbox-bottle {height: 250px;position: relative;top: -67px;left: -14px;}
+.stick_bar {background: #5c157a;background-size: 55%;height: 150px;margin: -10px auto 0 auto;position: relative;}
+.security2 {position: relative;top: -154px;left: 41px;}
+.warning-notice-timer {background-color:red;color:white;font-weight:normal;line-height:12pt;}
+.warning-notice-timer .alert-color {color:yellow;font-weight:bold;}
+.warning-notice-timer .hurry {color:yellow;font-weight:bold;}
+input.btnSubmit {background: url(images/form-ord-nw-btn.png) no-repeat;height: 75px;border-radius: 5px;width: 100%;margin: 10px 0 25px;}
+input.btnSubmit:hover {cursor: pointer;}
+
+</style>
+    
+    <style>
+    label {
+		font-size: 14px;
+		margin-bottom: 0.25rem;}
+	.form-group {
+    margin-bottom: 1rem;
+		}
+		@media (max-width: 768px) {
+		  .mobi-buttons-hide{
+			  display: none !important;
+			 
+		  }
+	      .mobi-buttons-display{
+			  display: inherit;
+			  
+			  }
+		  }
+		  @media (min-width: 768px) {
+		  .mobi-buttons-hide{
+			  display: inherit;
+		  }
+		  .mobi-buttons-display{
+			  display: none !important;
+			  
+			  }
+			
+		  }	
+        .bg-dark {
+            background-color: #000!important;
+        }
+	</style>
+</head>
+<body>
+      <div class="top1">HURRY! Sale ends when inventory runs out. <img src="assets/images/eye.png"> 12 other people are looking at this offer...</div>
+    <div class="top2">New Years Special UP TO 70% OFF • 100% Satisfaction Guarantee that it works!</div>
+<img src="assets/images/buy1-get-1free.jpg"  style="display:none" class="lazyload" id="ExitPop" border="0">
+<nav class="navbar sticky-top navbar-dark bg-dark colnopad">
+  
+    <div class="container">
+        <div class="col colnopad">
+            <a class="navbar-brand" href="#"><img src="assets/images/logo.png" data-src="https://cdn.offerspace.com/conceptweb/cbdhs/herbalistoils/logo.png" class="lazyload img-fluid" style="max-height:40px;" data-loaded="true"></a>
+        </div>
+        <div class="col colnopad mobi-buttons-hide">
+            <a href="#ordernow">
+                <button class="btn btn-lg btn-success float-right heartbeat">ORDER NOW</button>
+            </a>
+        </div>
+         <div class="col colnopad mobi-buttons-display">
+            <a href="https://offer.pureherbalistoils.com/gen/processor/8">
+                <button class="btn btn-lg btn-success float-right heartbeat">ORDER NOW</button>
+            </a>
+        </div>
+       
+    </div>
+</nav>
+<div class="container-fluid header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                
+                <h1>
+                    100% PURE CBD!
+                </h1>
+               
+              
+				<div class="row">
+                    <div class="col-lg-7">
+                         <h3><span style="color:#000;">Powerful Natural Pain Relief</span> - At 250x the Absorption You Won't Believe it's All Natural</h3>
+                       
+                          <h5>"The <i>Safest, Non Addictive and Most Effective</i> CBD Formula has finally
+                    been released to the public for the first time...”</h5>
+                        <center><img src="assets/images/mobi-featured.png" class="mx-auto d-block img-fluid mobi-buttons-display" style="height:auto;" data-loaded="true"></center>
+                <ul class="fa-ul mobi-buttons-hide">
+                    <li><span class="fa-li"><i class="fas fa-cannabis"></i></span> <strong>Powerful Fast Acting Pain
+                            Relief</strong> : New Formula is Non Addictve, All Natural and Legal!
+                    </li>
+                    <li><span class="fa-li"><i class="far fa-grin-alt"></i></span> <strong>Relieve Anxiety, Depression
+                            &amp; Insomnia</strong> : Doctors Praising CBD as Miracle Formula!
+                    </li>
+                    <li><span class="fa-li"><i class="fas fa-bolt"></i></span><strong> Improves Focus, Memory &amp;
+                            Mood</strong> : People are getting ahead with their Careers &amp; Family Life!
+                    </li>
+                      <li><span class="fa-li"><i class="fas fa-ban"></i></span><strong> Does not show on Drug Test</strong> : Does not contain THC.
+                    </li>
+
+                </ul>
+					</div>
+                    <a name="ordernow"></a>
+				<div class="col-lg-5 "><img src="assets/images/feature.png" class="mx-auto d-block img-fluid mobi-buttons-hide" style="height:auto;" data-loaded="true">
+					
+					</div>
+				</div><div class="custom-title mobi-buttons-display" style="font-size:35px;text-align: left;font-weight:bold;line-height:32px;"><span class="emphasis">STEP 1 - </span>TELL US WHERE TO SEND YOUR BOTTLE 
+                                    </div>
+                <div class="mobi-buttons-display">
+                     <a href="https://offer.pureherbalistoils.com/gen/processor/8"><br>
+                <button class="btn btn-lg btn-success float-right btn-block heartbeat" style="padding:15px 0;">RUSH MY ORDER NOW &gt;&gt;</button>
+            </a>
+                </div>
+                <img src="assets/images/dsk-cta.jpg" class="mx-auto d-block img-fluid mobi-buttons-hide">
+                <div class=" "><center><br><span style="font-size:20px;color:#050505; font-weight: bold">*Bottles Available until supply runs out. </span></center>
+                    <div class="mobi-buttons-display"><br>
+                        <img src="assets/images/securicons.png" class="mx-auto d-block img-fluid" style="border-radius:10px;">
+                    </div>
+				</div>
+               
+            </div>
+			
+            <div class="col-lg-4 colnopad">
+				
+                
+                <center><img src="assets/images/seals-top.png" data-src="https://s3.amazonaws.com/cdn.offerspace.com/conceptweb/khs-fr/seals-top.png" alt="" class="center-block img-responsive lazyload mobi-buttons-hide" data-loaded="true" style="width: 70%;height:auto;"></center><br>
+                <div class=" fbbox mobi-buttons-hide">
+					<div class="modal-header" style="background-color: #218838; ">
+					<center><h2 style=" margin-bottom: 0;color:#ffffff;">Where do we send your bottle?</h2></center></div>
+						<div class="fbboxInner">
+				<form id='ProspectForm'>
+						  
+
+						  <div class="form-group">
+                              <div class="row">
+                                  <div class="col-6">
+                                    <!--<label >First Name:</label>-->
+                                    <input name="firstName" id="firstName" placeholder="First Name" class="sec1-input" style="width: 100% !important;" required>
+                                  </div>
+                                  
+                                  <div class="col-6">
+                                    <!--<label >Last Name:</label>--><input name="lastName" placeholder="Last Name" class="sec1-input" style="width: 100% !important;" required>
+                                  </div>
+							
+							 </div>
+						  </div>
+						
+						  <div class="form-group">
+							<!--<label >Email Address:</label>-->
+							<input type="email" name="email" placeholder="Email" class="sec1-input" required style="width: 100% !important;">
+							
+						  </div>
+						  <div class="form-group">
+							<!--<label >Phone Number:</label>-->
+							<input type="tel" placeholder="Phone" class="sec1-input telephone" style="width: 100% !important;" required>
+							
+						  </div>
+                           <div class="form-group">
+							<!--<label for="exampleInputEmail1">Shipping Address:</label>-->
+                            <input name="address1" id=""  placeholder="Address" class="sec1-input" style="width: 100% !important;" required>
+							
+						  </div>
+						   <div class="form-group">
+							<!--<label for="exampleInputEmail1">City:</label>-->
+							<input name="city" id='city'  placeholder="City" class="sec1-input" style="width: 100% !important;" required>
+							
+						  </div>
+						  <div class="form-group">
+							<!--<label for="exampleInputEmail1">Country:</label>-->
+							<select name="shipping_country" id="shipping_country" class="form-control form-control-sm valid" required="">
+    <option value="">Select Country</option>
+    <option value="US" onclick="">  United States</option>
+    <option value="CA" onclick="">  Canada</option>
+      
+</select>
+							
+						  </div>
+                        <div class="form-group">
+							<!--<label for="exampleInputEmail1">State/Province:</label>-->
+							<select name='state' id='state' class="sec1-input" style="width: 100% !important;" required>
+                        <option value="" selected="selected">Select State</option>
+                        <option value="AL">Alabama</option>
+                        <option value="AK">Alaska</option>
+                        <option value="AZ">Arizona</option>
+                        <option value="AR">Arkansas</option>
+                        <option value="CA">California</option>
+                        <option value="CO">Colorado</option>
+                        <option value="CT">Connecticut</option>
+                        <option value="DE">Delaware</option>
+                        <option value="DC">District of Columbia</option>
+                        <option value="FL">Florida</option>
+                        <option value="GA">Georgia</option>
+                        <option value="HI">Hawaii</option>
+                        <option value="ID">Idaho</option>
+                        <option value="IL">Illinois</option>
+                        <option value="IN">Indiana</option>
+                        <option value="KS">Kansas</option>
+                        <option value="KY">Kentucky</option>
+                        <option value="LA">Louisiana</option>
+                        <option value="ME">Maine</option>
+                        <option value="MD">Maryland</option>
+                        <option value="MA">Massachusetts</option>
+                        <option value="MI">Michigan</option>
+                        <option value="MN">Minnesota</option>
+                        <option value="MS">Mississippi</option>
+                        <option value="MO">Missouri</option>
+                        <option value="MT">Montana</option>
+                        <option value="NE">Nebraska</option>
+                        <option value="NV">Nevada</option>
+                        <option value="NH">New Hampshire</option>
+                        <option value="NJ">New Jersey</option>
+                        <option value="NM">New Mexico</option>
+                        <option value="NY">New York</option>
+                        <option value="NC">North Carolina</option>
+                        <option value="ND">North Dakota</option>
+                        <option value="OH">Ohio</option>
+                        <option value="OK">Oklahoma</option>
+                        <option value="OR">Oregon</option>
+                        <option value="PA">Pennsylvania</option>
+                        <option value="RI">Rhode Island</option>
+                        <option value="SC">South Carolina</option>
+                        <option value="SD">South Dakota</option>
+                        <option value="TN">Tennessee</option>
+                        <option value="TX">Texas</option>
+                        <option value="VT">Vermont</option>
+                        <option value="VA">Virginia</option>
+                        <option value="WA">Washington</option>
+                        <option value="WV">West Virginia</option>
+                        <option value="WI">Wisconsin</option>
+                        <option value="WY">Wyoming</option>
+                    </select>
+							
+						  </div>
+						  <div class="form-group">
+							<!--<label for="exampleInputEmail1">Zip/Postal Code:</label>-->
+							<input type="tel" name='zip' id='zip' placeholder="Postal Code" class="sec1-input" style="width: 100% !important;" required>
+							
+						  </div>
+					   
+					    <div class="form-check">
+							<!--<input type="checkbox" class="form-check-input" id="exampleCheck1">
+						  <label class="form-check-label" >I am over 18 and am a US Resident</label><br><br>-->
+					      
+						  </div>
+                             <div class="text-center"><i class="fa fa-lock"></i> Your Privacy is Protected</div><br>
+						  <button type="submit" class=" btnSubmit pulse btn btn-lg btn-success btn-block" name="create_prospect" style="padding:20px 40px;">RUSH MY ORDER</button>
+
+                          <br>
+						 
+                            <img src="assets/images/security-icons.png" class="mx-auto d-block img-fluid">
+						</form>
+				</div></div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-lg rowtwo">
+            <img src="assets/images/as-seen-on.jpg" data-src="https://cdn.offerspace.com/conceptweb/cbdhs/herbalistoils-clean/as-seen-on.jpg" class="lazyload mx-auto d-block img-fluid" data-loaded="true">
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-8 offset-2 text-center">
+            <div class="padme">&nbsp;</div>
+            <img src="assets/images/plus.png"  class="lazyload d-block mx-auto"><br>
+            <h1>Powerful Pain Relief without the Pills!</h1><br>
+           <p>CBD Oil works WITH your body to ELIMINATE YOUR PAIN FROM WITHIN. And it goes to work quickly. After over 20,000 clinical studies, it has been proven over and over again ... The cannabinoids found in Herbalist Oils™ {{S1.name}} Drops are the SAME compounds that regulate mood and pain in the brain and body. In just days, the cannabinoids in Herbalist Oils {{S1.name}} Drops will tune your entire endocannabinoid system (the network of receptors found throughout your body, including your brain, organs, glands)... leaving you pain free and feeling years younger. Muscle pain, joint pain, arthritis pain, headaches, body aches - all eliminated.
+<br></p>
+            <br><br> <img src="assets/images/cbd-magazines.png" class="mx-auto d-block img-fluid" style="max-width:300px;">
+
+<p>It is important to note that the Herbalist Oils CBD 100% Pure Hemp Oil used in the study was the real deal and exceeds the studies product potency using proprietary methods.</p>
+            <br><br>
+            <img src="assets/images/takingdrops.jpg" data-src="https://s3.amazonaws.com/cdn.offerspace.com/conceptweb/cbdhs/cartabandonfb/takingdrops.jpg" class="lazyload d-block mx-auto img-fluid">
+        </div>
+    </div>
+</div>
+<div class="container-fluid alternatebg">
+    <div class="container">
+        <div class="row">
+            <div class="col-8 offset-2 text-center">
+                <div class="padme">&nbsp;</div>
+                <img src="assets/images/plus.png"  class="lazyload d-block mx-auto"><br>
+                <h1>Stop Pain for Good the Natural Way!</h1>
+                <h5>We Have the Absolute Best CBD Period. We know, we've had it tested.</h5>
+                <br>
+                <p>CBD is similar to other products in that it is capable of being “watered down.” Some companies
+                    will try to eke out a higher profit margin by fooling their customers into thinking they’re getting
+                    more for less. In addition a lot of companies do not source their hemp oil from plants that have been
+                    organically grown and therefore are riddled with Pesticides, Residual Solvents, Bacteria and Fungus,
+                    Foreign Matter and Heavy Metals. </p>
+                <p>
+
+                     There are many CBD brands on the market, but none compare to ours! We’ve worked long
+                    and hard to create a proprietary formula of CBD Oil that is as effective as it is fast-acting. Using
+                    water soluable full spectrum CBD, our products boast an increased absorption rate in the GI tract
+                    and 15 minute onset-of-action — numbers that no one else even comes close to.</p>
+                
+
+                 <img class="lazyload" src="assets/images/dont-miss.png" >
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid grnbg lazyload" >
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <img src="assets/images/top-arrow.png"  class="lazyload d-block mx-auto">
+                <div class="padme">&nbsp;</div>
+            </div>
+            <div class="col-md">
+                 <h1>The Science of CBD</h1>
+                <h5>100% Legal • 100% Pure CBD • 100% Absorption </h5><br>
+                <p style="font-size:18px;">Herbalist Oils Pure CBD Oil has finally been released to the public for
+                    the first time ever and is making waves for the competition because of it’s potent absorption.</p>
+                <h2>“When CBD is fully absorbed its benefits are Absolutely Astounding...”</h2>
+                <i>- Harvard Medical Journal</i>
+                <br>
+                <p>The endocannabinoid system (ECS) regulates everything from relaxation to eating, sleeping, inflammation and even cognitive function. In a nutshell, the ECS is responsible for making sure the entire body is working optimally. CBD Oil has been medically proven to positively regulate your ECS addressing issues such as anxiety, insomnia, chronic pain, hypertension and even cardiovascular issues. </p>
+                <div class="padme">&nbsp;</div>
+            </div>
+            <div class="col-md" style="position: relative;">
+                <a href="#ordernow">
+                    <img src="assets/images/cbd-receptors.png"  class="img-fluid lazyload d-block mx-auto ">
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid model lazyload">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="padme">&nbsp;</div>
+                <div class="padme">&nbsp;</div>
+            </div>
+     
+            <div class="col-sm-3 offset-md-1 featuresHeadingLeft align-self-center" style="">
+                <h3>Many Health</h3>
+                <h4>Benefits</h4>
+                <br>
+            </div>
+            <div class="col-sm-8 featuresHeadingRight">
+                <h1>Helps to Relieve Pain better than any other
+                    natural solution ... without negative side effects.</h1>
+                <p>Just 30 drops per day puts you back in control of your pain and your health. Supercharge your life
+                    again!</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8 offset-md-4 ">
+                <div class="padme">&nbsp;</div>
+                <ul class="fa-ul features">
+                    <li><span class="fa-li fa-li2"><i class="fas fa-cannabis"></i></span> <strong>Powerful Fast Acting
+                            Pain Relief</strong>
+                        <p>One of the most celebrated health benefits of CBD oil is its analgesic (pain relieving)
+                            effects. It’s thought that CBD interacts with receptors in the brain and immune system to
+                            reduce inflammation and alleviate pain. Some studies, such as this investigation published
+                            in the Journal of Experimental Medicine, found that CBD significantly reduces inflammation
+                            in mice and rats – but it’s not only rodents that experience these effects. A 2008 review
+                            identified that CBD offered effective pain relief without inducing adverse side effects in
+                            patients.</p>
+                    </li>
+                    <li><span class="fa-li fa-li2"><i class="fas fa-cannabis"></i></span> <strong>Combat Anxiety, Stress
+                            &amp; Depression</strong>
+                        <p>While CBD is most commonly used to treat physiological symptoms, there’s a growing body of
+                            research that indicates it can also be used in the therapy of a range of mental health
+                            conditions, including anxiety. A study by the University of São Paulo found that CBD
+                            significantly reduces subjective anxiety, leading investigators to conclude that “These
+                            results suggest that CBD reduces anxiety in [social anxiety disorder] and that this is
+                            related to its effects on activity in limbic and paralimbic brain areas.”</p>
+                    </li>
+                    <li><span class="fa-li fa-li2"><i class="fas fa-cannabis"></i></span> <strong>Protect the Brain and
+                            Fight Brain Degeneration</strong>
+                        <p>Cannabinoids are neuroprotective, meaning that they help maintain and regulate brain health.
+                            The effects appear to be related to several actions they have on the brain, including the
+                            removal of damaged cells and the improved efficiency of mitochondria.[190] CBD and other
+                            antioxidant compounds in cannabis also work to reduce glutamate toxicity.</p>
+                    </li>
+                    <li><span class="fa-li fa-li2"><i class="fas fa-cannabis"></i></span> <strong>Improve Focus &amp; Reduce
+                            ADD Symptoms</strong>
+                        <p>It helps your focus by allowing more serotonin to flow in your brain in a similar manner as a
+                            selective serotonin reuptake inhibitor (SSRI). This increased serotonin leads to less
+                            anxiety. One side effect of less anxiety is more focus. A lack of focus is often caused by
+                            anxiety. CBD has even been shown to help improve the symptoms relating to attention deficit
+                            hyperactivity disorder (ADHD). Those symptoms often include an extreme lack of focus amongst
+                            other negative symptoms.
+
+                            All in all, CBD has excellent benefits for improving focus because of its similarity to SSRI
+                            drugs. The next important step to learn about CBD is how to use it. CBD has many different
+                            forms and methods of consumption. However, not all methods of consumption are created
+                            equally, and differences do exist.</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col mobi-buttons-hide">
+                <br><br>
+                <center><a href="#ordernow">
+                        <button class="btn btn-lg btn-success" style="padding:15px 40px;">ORDER NOW
+                        </button>
+                    </a></center>
+                <br><br> <br> <br>
+            </div>
+             <div class="col mobi-buttons-display">
+                <br><br>
+                <center><a href="https://offer.pureherbalistoils.com/gen/processor/8">
+                        <button class="btn btn-lg btn-success" style="padding:15px 40px;">ORDER NOW
+                        </button>
+                    </a></center>
+                <br><br> <br> <br>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div class="container-fluid alternatebg">
+    <div class="container">
+        <div class="row alt">
+            <div class="col-md-12">
+                <div class="padme">&nbsp;</div>
+            </div>
+
+            <div class="col-md-12 text-center">
+                <h1>Incredibly Fast Absorption</h1>
+                <h5>Better Absorption Means Your Body Benefits Faster!</h5>
+                <div class="padme">&nbsp;</div>
+            </div>
+
+            <div class="col-md-6">
+                <h6>Outperforms Any Other CBD Formula</h6><br>
+                <p>Our pharmaceutical-grade water soluble full spectrum CBD oil outperforms the leading pharma brand
+                    thanks to our unique formulation made from the highest-grade ingredients available, which has shown
+                    to increase the absorption by 5-10 fold.</p>
+                <p>
+                    In a test against cannabinoid uptake results, published by a leading pharma brand, our hemp oil was
+                    absorbed in the blood in amounts three times as great at half the dose. Don’t waste your money on
+                    formulas and brands trying to race to the market with something to sell. Trust a brand that has
+                    been tested, proven and doctor approved.</p>
+            </div>
+            <div class="col-md-6">
+                <img src="assets/images/chart.jpg"  class="lazyload d-block mx-auto img-fluid">
+            </div>
+            <div class="col-md-12">
+                <div class="padme">&nbsp;</div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid grnbg lazyload" >
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="padme">&nbsp;</div>
+            </div>
+            <div class="col-md-6">
+                <a href="#ordernow"><img src="assets/images/mid-cta-product.png"></a>
+            </div>
+            <div class="col-md-6 text-center">
+                <div class="padme">&nbsp;</div>
+                <h1>Get your FREE Bottle OFFER!</h1>
+                <p style="font-size:20px;">Try it now and if you don’t feel a difference we will buy back your empty
+                    bottles. No questions asked, it’s that simple.</p>
+                <h4>Hurry! We can’t hold this offer forever...</h4>
+                <br>
+                <div class="mobi-buttons-hide">
+                <a href="#ordernow">
+                    <button class="btn btn-warning">BUY NOW</button>
+                </a></div>
+                <div class="mobi-buttons-display">
+                <a href="https://offer.pureherbalistoils.com/gen/processor/8">
+                    <button class="btn btn-warning">BUY NOW</button>
+                </a></div>
+                <br><br>
+                Limited time only! Supplies Limited.
+            </div>
+            <div class="col-lg-12">
+                <div class="padme">&nbsp;</div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+<div class="container-fluid alternatebg">
+    <div class="container">
+        <div class="row alt">
+            <div class="col-md-12">
+                <div class="padme">&nbsp;</div>
+            </div>
+
+            <div class="col-md-6 offset-md-3 col-sm-12 text-center">
+                <div class="padme">&nbsp;</div>
+                <img src="assets/images/plus.png"  class="lazyload d-block mx-auto"><br>
+                <h3>Helps to Relieve Pain better than any other
+                    natural solution without negative side effects.</h3>
+
+            </div>
+
+            <div class="col-md-6 offset-md-3 col-sm-12"><br><br>
+                <div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;">
+                    <div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;">
+                        <div class="wistia_video_foam_dummy" data-source-container-id="wistia-hv7vvjzp54-1" style="border: 0px; display: block; height: 0px; margin: 0px; padding: 0px; position: static; visibility: hidden; width: auto;"></div><div class="wistia_embed wistia_async_hv7vvjzp54 seo=false videoFoam=true autoPlay=false wistia_embed_initialized" style="height: 304px; position: relative; width: 540px;" id="wistia-hv7vvjzp54-1"><div id="wistia_chrome_25" class="w-chrome" tabindex="-1" style="display: inline-block; height: 304px; margin: 0px; padding: 0px; position: relative; vertical-align: top; width: 540px; zoom: 1; outline: none; overflow: hidden; box-sizing: content-box;"><div id="wistia_grid_31_wrapper" style="display: block; width: 540px; height: 304px;"><div id="wistia_grid_31_above" style="height: 0px; font-size: 0px; line-height: 0px;"> </div><div id="wistia_grid_31_main" style="width: 540px; left: 0px; height: 304px; margin-top: 0px;"><div id="wistia_grid_31_behind"></div><div id="wistia_grid_31_center" style="width: 100%; height: 100%;"><div class="w-video-wrapper w-css-reset" style="height: 100%; position: absolute; top: 0px; width: 100%; opacity: 1; background-color: rgb(0, 0, 0);"><video id="wistia_simple_video_52" crossorigin="anonymous" poster="https://fast.wistia.com/assets/assets/images/blank.gif" aria-label="Video" src="blob:https://offer.pureherbalistoils.com/36400b98-c9c9-4840-b235-716dafb5f6ec" controlslist="nodownload" playsinline="" preload="metadata" type="video/m3u8" x-webkit-airplay="allow" style="background: transparent; display: block; height: 100%; max-height: none; max-width: none; position: static; visibility: visible; width: 100%; object-fit: fill;"></video></div><div class="w-ui-container" style="height: 100%; left: 0px; position: absolute; top: 0px; width: 100%; opacity: 1;"><style id="wistia_38_style" type="text/css" class="wistia_injected_style">
+      #wistia_chrome_25 #wistia_grid_31_wrapper .w-css-reset{font-size:14px;}
+#wistia_chrome_25 #wistia_grid_31_wrapper div.w-css-reset{box-sizing:inherit;box-shadow:none;color:inherit;display:block;float:none;font:inherit;font-family:inherit;font-style:normal;font-weight:normal;font-size:inherit;letter-spacing:0;line-height:inherit;margin:0;max-height:none;max-width:none;min-height:none;min-width:none;padding:0;position:static;text-decoration:none;text-transform:none;text-shadow:none;transition:none;word-wrap:normal;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;-webkit-font-smoothing:antialiased}
+#wistia_chrome_25 #wistia_grid_31_wrapper span.w-css-reset{box-sizing:inherit;box-shadow:none;color:inherit;display:block;float:none;font:inherit;font-family:inherit;font-style:normal;font-weight:normal;font-size:inherit;letter-spacing:0;line-height:inherit;margin:0;max-height:none;max-width:none;min-height:none;min-width:none;padding:0;position:static;text-decoration:none;text-transform:none;text-shadow:none;transition:none;word-wrap:normal;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;-webkit-font-smoothing:antialiased}
+#wistia_chrome_25 #wistia_grid_31_wrapper ul.w-css-reset{box-sizing:inherit;box-shadow:none;color:inherit;display:block;float:none;font:inherit;font-family:inherit;font-style:normal;font-weight:normal;font-size:inherit;letter-spacing:0;line-height:inherit;margin:0;max-height:none;max-width:none;min-height:none;min-width:none;padding:0;position:static;text-decoration:none;text-transform:none;text-shadow:none;transition:none;word-wrap:normal;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;-webkit-font-smoothing:antialiased}
+#wistia_chrome_25 #wistia_grid_31_wrapper li.w-css-reset{box-sizing:inherit;box-shadow:none;color:inherit;display:block;float:none;font:inherit;font-family:inherit;font-style:normal;font-weight:normal;font-size:inherit;letter-spacing:0;line-height:inherit;margin:0;max-height:none;max-width:none;min-height:none;min-width:none;padding:0;position:static;text-decoration:none;text-transform:none;text-shadow:none;transition:none;word-wrap:normal;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;-webkit-font-smoothing:antialiased}
+#wistia_chrome_25 #wistia_grid_31_wrapper label.w-css-reset{box-sizing:inherit;box-shadow:none;color:inherit;display:block;float:none;font:inherit;font-family:inherit;font-style:normal;font-weight:normal;font-size:inherit;letter-spacing:0;line-height:inherit;margin:0;max-height:none;max-width:none;min-height:none;min-width:none;padding:0;position:static;text-decoration:none;text-transform:none;text-shadow:none;transition:none;word-wrap:normal;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;-webkit-font-smoothing:antialiased}
+#wistia_chrome_25 #wistia_grid_31_wrapper button.w-css-reset{box-sizing:inherit;box-shadow:none;color:inherit;display:block;float:none;font:inherit;font-family:inherit;font-style:normal;font-weight:normal;font-size:inherit;letter-spacing:0;line-height:inherit;margin:0;max-height:none;max-width:none;min-height:none;min-width:none;padding:0;position:static;text-decoration:none;text-transform:none;text-shadow:none;transition:none;word-wrap:normal;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;-webkit-font-smoothing:antialiased}
+#wistia_chrome_25 #wistia_grid_31_wrapper img.w-css-reset{box-sizing:inherit;box-shadow:none;color:inherit;display:block;float:none;font:inherit;font-family:inherit;font-style:normal;font-weight:normal;font-size:inherit;letter-spacing:0;line-height:inherit;margin:0;max-height:none;max-width:none;min-height:none;min-width:none;padding:0;position:static;text-decoration:none;text-transform:none;text-shadow:none;transition:none;word-wrap:normal;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;-webkit-font-smoothing:antialiased}
+#wistia_chrome_25 #wistia_grid_31_wrapper a.w-css-reset{box-sizing:inherit;box-shadow:none;color:inherit;display:block;float:none;font:inherit;font-family:inherit;font-style:normal;font-weight:normal;font-size:inherit;letter-spacing:0;line-height:inherit;margin:0;max-height:none;max-width:none;min-height:none;min-width:none;padding:0;position:static;text-decoration:none;text-transform:none;text-shadow:none;transition:none;word-wrap:normal;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;-webkit-font-smoothing:antialiased}
+#wistia_chrome_25 #wistia_grid_31_wrapper svg.w-css-reset{box-sizing:inherit;box-shadow:none;color:inherit;display:block;float:none;font:inherit;font-family:inherit;font-style:normal;font-weight:normal;font-size:inherit;letter-spacing:0;line-height:inherit;margin:0;max-height:none;max-width:none;min-height:none;min-width:none;padding:0;position:static;text-decoration:none;text-transform:none;text-shadow:none;transition:none;word-wrap:normal;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;-webkit-font-smoothing:antialiased}
+#wistia_chrome_25 #wistia_grid_31_wrapper p.w-css-reset{box-sizing:inherit;box-shadow:none;color:inherit;display:block;float:none;font:inherit;font-family:inherit;font-style:normal;font-weight:normal;font-size:inherit;letter-spacing:0;line-height:inherit;margin:0;max-height:none;max-width:none;min-height:none;min-width:none;padding:0;position:static;text-decoration:none;text-transform:none;text-shadow:none;transition:none;word-wrap:normal;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;-webkit-font-smoothing:antialiased}
+#wistia_chrome_25 #wistia_grid_31_wrapper a.w-css-reset{border:0;}
+#wistia_chrome_25 #wistia_grid_31_wrapper p.w-css-reset{margin:1.4em 0;}
+#wistia_chrome_25 #wistia_grid_31_wrapper a.w-css-reset{display:inline;}
+#wistia_chrome_25 #wistia_grid_31_wrapper span.w-css-reset{display:inline;}
+#wistia_chrome_25 #wistia_grid_31_wrapper svg.w-css-reset{display:inline;}
+#wistia_chrome_25 #wistia_grid_31_wrapper ul.w-css-reset{box-sizing:inherit;box-shadow:none;color:inherit;display:block;float:none;font:inherit;font-family:inherit;font-style:normal;font-weight:normal;font-size:inherit;letter-spacing:0;line-height:inherit;margin:0;max-height:none;max-width:none;min-height:none;min-width:none;padding:0;position:static;text-decoration:none;text-transform:none;text-shadow:none;transition:none;word-wrap:normal;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;-webkit-font-smoothing:antialiased;list-style-type:none}
+#wistia_chrome_25 #wistia_grid_31_wrapper ol.w-css-reset{box-sizing:inherit;box-shadow:none;color:inherit;display:block;float:none;font:inherit;font-family:inherit;font-style:normal;font-weight:normal;font-size:inherit;letter-spacing:0;line-height:inherit;margin:0;max-height:none;max-width:none;min-height:none;min-width:none;padding:0;position:static;text-decoration:none;text-transform:none;text-shadow:none;transition:none;word-wrap:normal;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;-webkit-font-smoothing:antialiased;list-style-type:none}
+#wistia_chrome_25 #wistia_grid_31_wrapper li.w-css-reset{box-sizing:inherit;box-shadow:none;color:inherit;display:block;float:none;font:inherit;font-family:inherit;font-style:normal;font-weight:normal;font-size:inherit;letter-spacing:0;line-height:inherit;margin:0;max-height:none;max-width:none;min-height:none;min-width:none;padding:0;position:static;text-decoration:none;text-transform:none;text-shadow:none;transition:none;word-wrap:normal;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;-webkit-font-smoothing:antialiased;list-style-type:none}
+#wistia_chrome_25 #wistia_grid_31_wrapper ul:before.w-css-reset{display:none}
+#wistia_chrome_25 #wistia_grid_31_wrapper ol:before.w-css-reset{display:none}
+#wistia_chrome_25 #wistia_grid_31_wrapper li:before.w-css-reset{display:none}
+#wistia_chrome_25 #wistia_grid_31_wrapper ul:after.w-css-reset{display:none}
+#wistia_chrome_25 #wistia_grid_31_wrapper ol:after.w-css-reset{display:none}
+#wistia_chrome_25 #wistia_grid_31_wrapper li:after.w-css-reset{display:none}
+#wistia_chrome_25 #wistia_grid_31_wrapper label.w-css-reset{background-attachment:scroll;background-color:transparent;background-image:none;background-position:0 0;background-repeat:no-repeat;background-size:100% 100%;float:none;outline:none}
+#wistia_chrome_25 #wistia_grid_31_wrapper button.w-css-reset{background-attachment:scroll;background-color:transparent;background-image:none;background-position:0 0;background-repeat:no-repeat;background-size:100% 100%;border:0;border-radius:0;outline:none;position:static}
+#wistia_chrome_25 #wistia_grid_31_wrapper img.w-css-reset{border:0;display:inline-block;vertical-align:top;border-radius:0;outline:none;position:static}
+#wistia_chrome_25 #wistia_grid_31_wrapper .w-css-reset button::-moz-focus-inner{border: 0;}
+      #wistia_chrome_25 #wistia_grid_31_wrapper .w-css-reset-tree {font-size:14px;}
+#wistia_chrome_25 #wistia_grid_31_wrapper .w-css-reset-tree div{box-sizing:inherit;box-shadow:none;color:inherit;display:block;float:none;font:inherit;font-family:inherit;font-style:normal;font-weight:normal;font-size:inherit;letter-spacing:0;line-height:inherit;margin:0;max-height:none;max-width:none;min-height:none;min-width:none;padding:0;position:static;text-decoration:none;text-transform:none;text-shadow:none;transition:none;word-wrap:normal;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;-webkit-font-smoothing:antialiased}
+#wistia_chrome_25 #wistia_grid_31_wrapper .w-css-reset-tree span{box-sizing:inherit;box-shadow:none;color:inherit;display:block;float:none;font:inherit;font-family:inherit;font-style:normal;font-weight:normal;font-size:inherit;letter-spacing:0;line-height:inherit;margin:0;max-height:none;max-width:none;min-height:none;min-width:none;padding:0;position:static;text-decoration:none;text-transform:none;text-shadow:none;transition:none;word-wrap:normal;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;-webkit-font-smoothing:antialiased}
+#wistia_chrome_25 #wistia_grid_31_wrapper .w-css-reset-tree ul{box-sizing:inherit;box-shadow:none;color:inherit;display:block;float:none;font:inherit;font-family:inherit;font-style:normal;font-weight:normal;font-size:inherit;letter-spacing:0;line-height:inherit;margin:0;max-height:none;max-width:none;min-height:none;min-width:none;padding:0;position:static;text-decoration:none;text-transform:none;text-shadow:none;transition:none;word-wrap:normal;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;-webkit-font-smoothing:antialiased}
+#wistia_chrome_25 #wistia_grid_31_wrapper .w-css-reset-tree li{box-sizing:inherit;box-shadow:none;color:inherit;display:block;float:none;font:inherit;font-family:inherit;font-style:normal;font-weight:normal;font-size:inherit;letter-spacing:0;line-height:inherit;margin:0;max-height:none;max-width:none;min-height:none;min-width:none;padding:0;position:static;text-decoration:none;text-transform:none;text-shadow:none;transition:none;word-wrap:normal;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;-webkit-font-smoothing:antialiased}
+#wistia_chrome_25 #wistia_grid_31_wrapper .w-css-reset-tree label{box-sizing:inherit;box-shadow:none;color:inherit;display:block;float:none;font:inherit;font-family:inherit;font-style:normal;font-weight:normal;font-size:inherit;letter-spacing:0;line-height:inherit;margin:0;max-height:none;max-width:none;min-height:none;min-width:none;padding:0;position:static;text-decoration:none;text-transform:none;text-shadow:none;transition:none;word-wrap:normal;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;-webkit-font-smoothing:antialiased}
+#wistia_chrome_25 #wistia_grid_31_wrapper .w-css-reset-tree button{box-sizing:inherit;box-shadow:none;color:inherit;display:block;float:none;font:inherit;font-family:inherit;font-style:normal;font-weight:normal;font-size:inherit;letter-spacing:0;line-height:inherit;margin:0;max-height:none;max-width:none;min-height:none;min-width:none;padding:0;position:static;text-decoration:none;text-transform:none;text-shadow:none;transition:none;word-wrap:normal;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;-webkit-font-smoothing:antialiased}
+#wistia_chrome_25 #wistia_grid_31_wrapper .w-css-reset-tree img{box-sizing:inherit;box-shadow:none;color:inherit;display:block;float:none;font:inherit;font-family:inherit;font-style:normal;font-weight:normal;font-size:inherit;letter-spacing:0;line-height:inherit;margin:0;max-height:none;max-width:none;min-height:none;min-width:none;padding:0;position:static;text-decoration:none;text-transform:none;text-shadow:none;transition:none;word-wrap:normal;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;-webkit-font-smoothing:antialiased}
+#wistia_chrome_25 #wistia_grid_31_wrapper .w-css-reset-tree a{box-sizing:inherit;box-shadow:none;color:inherit;display:block;float:none;font:inherit;font-family:inherit;font-style:normal;font-weight:normal;font-size:inherit;letter-spacing:0;line-height:inherit;margin:0;max-height:none;max-width:none;min-height:none;min-width:none;padding:0;position:static;text-decoration:none;text-transform:none;text-shadow:none;transition:none;word-wrap:normal;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;-webkit-font-smoothing:antialiased}
+#wistia_chrome_25 #wistia_grid_31_wrapper .w-css-reset-tree svg{box-sizing:inherit;box-shadow:none;color:inherit;display:block;float:none;font:inherit;font-family:inherit;font-style:normal;font-weight:normal;font-size:inherit;letter-spacing:0;line-height:inherit;margin:0;max-height:none;max-width:none;min-height:none;min-width:none;padding:0;position:static;text-decoration:none;text-transform:none;text-shadow:none;transition:none;word-wrap:normal;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;-webkit-font-smoothing:antialiased}
+#wistia_chrome_25 #wistia_grid_31_wrapper .w-css-reset-tree p{box-sizing:inherit;box-shadow:none;color:inherit;display:block;float:none;font:inherit;font-family:inherit;font-style:normal;font-weight:normal;font-size:inherit;letter-spacing:0;line-height:inherit;margin:0;max-height:none;max-width:none;min-height:none;min-width:none;padding:0;position:static;text-decoration:none;text-transform:none;text-shadow:none;transition:none;word-wrap:normal;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;-webkit-font-smoothing:antialiased}
+#wistia_chrome_25 #wistia_grid_31_wrapper .w-css-reset-tree a{border:0;}
+#wistia_chrome_25 #wistia_grid_31_wrapper .w-css-reset-tree p{margin:1.4em 0;}
+#wistia_chrome_25 #wistia_grid_31_wrapper .w-css-reset-tree a{display:inline;}
+#wistia_chrome_25 #wistia_grid_31_wrapper .w-css-reset-tree span{display:inline;}
+#wistia_chrome_25 #wistia_grid_31_wrapper .w-css-reset-tree svg{display:inline;}
+#wistia_chrome_25 #wistia_grid_31_wrapper .w-css-reset-tree ul{box-sizing:inherit;box-shadow:none;color:inherit;display:block;float:none;font:inherit;font-family:inherit;font-style:normal;font-weight:normal;font-size:inherit;letter-spacing:0;line-height:inherit;margin:0;max-height:none;max-width:none;min-height:none;min-width:none;padding:0;position:static;text-decoration:none;text-transform:none;text-shadow:none;transition:none;word-wrap:normal;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;-webkit-font-smoothing:antialiased;list-style-type:none}
+#wistia_chrome_25 #wistia_grid_31_wrapper .w-css-reset-tree ol{box-sizing:inherit;box-shadow:none;color:inherit;display:block;float:none;font:inherit;font-family:inherit;font-style:normal;font-weight:normal;font-size:inherit;letter-spacing:0;line-height:inherit;margin:0;max-height:none;max-width:none;min-height:none;min-width:none;padding:0;position:static;text-decoration:none;text-transform:none;text-shadow:none;transition:none;word-wrap:normal;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;-webkit-font-smoothing:antialiased;list-style-type:none}
+#wistia_chrome_25 #wistia_grid_31_wrapper .w-css-reset-tree li{box-sizing:inherit;box-shadow:none;color:inherit;display:block;float:none;font:inherit;font-family:inherit;font-style:normal;font-weight:normal;font-size:inherit;letter-spacing:0;line-height:inherit;margin:0;max-height:none;max-width:none;min-height:none;min-width:none;padding:0;position:static;text-decoration:none;text-transform:none;text-shadow:none;transition:none;word-wrap:normal;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;-webkit-font-smoothing:antialiased;list-style-type:none}
+#wistia_chrome_25 #wistia_grid_31_wrapper .w-css-reset-tree ul:before{display:none}
+#wistia_chrome_25 #wistia_grid_31_wrapper .w-css-reset-tree ol:before{display:none}
+#wistia_chrome_25 #wistia_grid_31_wrapper .w-css-reset-tree li:before{display:none}
+#wistia_chrome_25 #wistia_grid_31_wrapper .w-css-reset-tree ul:after{display:none}
+#wistia_chrome_25 #wistia_grid_31_wrapper .w-css-reset-tree ol:after{display:none}
+#wistia_chrome_25 #wistia_grid_31_wrapper .w-css-reset-tree li:after{display:none}
+#wistia_chrome_25 #wistia_grid_31_wrapper .w-css-reset-tree label{background-attachment:scroll;background-color:transparent;background-image:none;background-position:0 0;background-repeat:no-repeat;background-size:100% 100%;float:none;outline:none}
+#wistia_chrome_25 #wistia_grid_31_wrapper .w-css-reset-tree button{background-attachment:scroll;background-color:transparent;background-image:none;background-position:0 0;background-repeat:no-repeat;background-size:100% 100%;border:0;border-radius:0;outline:none;position:static}
+#wistia_chrome_25 #wistia_grid_31_wrapper .w-css-reset-tree img{border:0;display:inline-block;vertical-align:top;border-radius:0;outline:none;position:static}
+#wistia_chrome_25 #wistia_grid_31_wrapper .w-css-reset-tree  button::-moz-focus-inner{border: 0;}
+      #wistia_chrome_25 #wistia_grid_31_wrapper .w-css-reset-max-width-none-important{max-width:none!important}
+      #wistia_chrome_25 #wistia_grid_31_wrapper .w-css-reset-button-important{border-radius:0!important;color:#fff!important;}
+    </style><div class="w-vulcan-v2 w-css-reset" id="w-vulcan-v2-30" style="box-sizing: border-box; cursor: default; height: 100%; left: 0px; position: absolute; visibility: visible; top: 0px; width: 100%;"><div class="w-vulcan--background w-css-reset" style="height: 100%; left: 0px; position: absolute; top: 0px; width: 100%;"><div class="w-css-reset" data-handle="statusBar"></div><div class="w-css-reset" data-handle="backgroundFocus"><button aria-label="Play Video" class="w-css-reset w-vulcan-v2-button" tabindex="0" style="width: 0px; height: 0px; pointer-events: none;"></button></div><div class="w-css-reset" data-handle="thumbnail"><div><div class="w-css-reset" style="height: 100%; left: 0px; opacity: 1; position: absolute; top: 0px; width: 100%; display: block;"><img class="w-css-reset" srcset="https://embedwistia-a.akamaihd.net/deliveries/595131ff183426c7c751c45c39d2033de6d221d2.webp?image_crop_resized=640x360 320w, https://embedwistia-a.akamaihd.net/deliveries/595131ff183426c7c751c45c39d2033de6d221d2.webp?image_crop_resized=640x360 640w, https://embedwistia-a.akamaihd.net/deliveries/595131ff183426c7c751c45c39d2033de6d221d2.webp?image_crop_resized=960x540 960w, https://embedwistia-a.akamaihd.net/deliveries/595131ff183426c7c751c45c39d2033de6d221d2.webp?image_crop_resized=1280x720 1280w, https://embedwistia-a.akamaihd.net/deliveries/595131ff183426c7c751c45c39d2033de6d221d2.webp?image_crop_resized=1920x1080 1920w, https://embedwistia-a.akamaihd.net/deliveries/595131ff183426c7c751c45c39d2033de6d221d2.webp?image_crop_resized=1920x1080 3840w" src="assets/images/595131ff183426c7c751c45c39d2033de6d221d2.webp" alt="Video Thumbnail" style="height: 304px; left: 0px; position: absolute; top: 0px; width: 540px; clip: auto; display: block; border-width: 0px; border-style: solid; border-color: rgb(0, 0, 0); box-sizing: content-box;"></div></div></div></div><div class="w-vulcan-overlays-table w-css-reset" style="display: table; pointer-events: none; position: absolute; width: 100%;"><div class="w-vulcan-overlays--left w-css-reset" style="display: table-cell; vertical-align: top; position: relative; width: 0px;"><div class="w-css-reset" style="height: 304px;"></div></div><div class="w-vulcan-overlays--center w-css-reset" style="display: table-cell; vertical-align: top; position: relative; width: 100%;"><div class="w-css-reset" style="height: 304px;"><div class="w-css-reset" data-handle="bigPlayButton" style="pointer-events: auto;"><div class="w-bpb-wrapper w-css-reset w-css-reset-tree" style="display: block; left: 50%; position: absolute; top: 50%; transform: translate(-50%, -50%);"><button class="w-big-play-button w-css-reset-button-important w-vulcan-v2-button" aria-label="Play Video: VSL (settings v.2)" style="cursor: pointer; height: 67.5px; background: rgba(84, 187, 255, 0.8); box-shadow: none; width: 105.469px;"><svg x="0px" y="0px" viewBox="0 0 125 80" enable-background="new 0 0 125 80" focusable="false" alt="" style="fill: rgb(255, 255, 255); height: 100%; left: 0px; stroke-width: 0px; top: 0px; width: 100%;"><rect fill-rule="evenodd" clip-rule="evenodd" fill="none" width="125" height="80"></rect><polygon fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF" points="53,22 53,58 79,40"></polygon></svg></button></div></div><div class="w-css-reset" data-handle="clickForSoundButton" style="pointer-events: auto;"><div class="w-css-reset w-css-reset-tree" data-handle="click-for-sound-backdrop" style="display: none; height: 100%; left: 0px; pointer-events: auto; position: absolute; top: 0px; width: 100%;"><button aria-label="Click for sound" class="w-vulcan-v2-button" style="background: rgba(0, 0, 0, 0.8); border: 2px solid transparent; border-radius: 50%; cursor: pointer; height: 44.2969px; width: 44.2969px; line-height: 44.2969px; outline: none; padding-right: 0px; pointer-events: auto; position: absolute; right: 16.9844px; text-align: left; top: 16.9844px;"><svg viewBox="0 0 237 237"><style>
+      @keyframes VOLUME_SMALL_WAVE_FLASH {
+          0% { opacity: 0; }
+         33% { opacity: 1; }
+         66% { opacity: 1; }
+        100% { opacity: 0; }
+      }
+
+      @keyframes VOLUME_LARGE_WAVE_FLASH {
+          0% { opacity: 0; }
+         33% { opacity: 1; }
+         66% { opacity: 1; }
+        100% { opacity: 0; }
+      }
+
+      .volume__small-wave {
+        animation: VOLUME_SMALL_WAVE_FLASH 2s infinite;
+        opacity: 0;
+      }
+
+      .volume__large-wave {
+        animation: VOLUME_LARGE_WAVE_FLASH 2s infinite .3s;
+        opacity: 0;
+      }
+    </style><polygon fill="white" points="88 107 65 107 65 131 89 131 112 154 112 84"></polygon><g fill="none" stroke="white" stroke-width="10" stroke-linecap="round"><path class="volume__small-wave" d="M 142 86 C 151 107 151 130 142 151"></path><path class="volume__large-wave" d="M 165 74 C 178 97 178 140 165 163"></path></g></svg></button></div></div><div class="w-css-reset" data-handle="loadingIndicator" style="pointer-events: auto;"><div aria-live="polite"></div></div><div class="w-css-reset" data-handle="playPauseNotifier" style="pointer-events: auto;"></div></div></div><div class="w-vulcan-overlays--right w-css-reset" style="display: table-cell; vertical-align: top; position: relative; width: 0px;"><div class="w-css-reset" style="height: 304px;"></div></div></div><div class="w-bottom-bar w-css-reset" style="bottom: 0px; border-collapse: collapse; display: table; height: 0px; left: 0px; opacity: 0; pointer-events: none; position: absolute; table-layout: auto; transition: opacity 0s ease 0s; width: 100%;"><div class="w-bottom-bar-upper w-css-reset" style="display: none; height: auto; pointer-events: none;"><div class="w-css-reset" data-handle="upperPlaybar" style="height: 100%;"><div class="w-playbar-wrapper w-css-reset w-css-reset-tree" role="slider" aria-label="Playbar" aria-orientation="horizontal" aria-valuenow="0" aria-valuemin="0" aria-valuemax="540.04" aria-valuetext="0:00" tabindex="0" style="cursor: pointer; height: 100%; outline: none; position: relative;"><div style="display: block; height: 100%; overflow: hidden; pointer-events: none; position: relative; width: 540px;"><canvas width="540" height="13" style="height: 13.5px; left: 0px; pointer-events: none; position: absolute; top: 0px; width: 540px;"></canvas></div><div class="w-playbar__hoverMarker" style="background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.12) 100%); display: none; height: 100%; left: -36px; pointer-events: none; position: absolute; top: 0px; width: 36px;"></div><div class="w-playbar__focus-border" style="border: 2px solid rgb(255, 255, 255); display: none; height: 100%; left: 0px; pointer-events: none; position: absolute; top: 0px; width: 100%;"></div></div></div></div><div class="w-bottom-bar-lower w-css-reset"><div class="w-bottom-bar-left w-css-reset" style="display: table-cell; vertical-align: top; position: relative; width: 0px;"><div class="w-bottom-bar-left-inner w-css-reset" style="height: 29px; position: relative; pointer-events: none; white-space: nowrap;"><div class="w-css-reset" data-handle="smallPlayButton" style="display: inline-block; vertical-align: top;"><div class="w-vulcan-button-wrapper w-css-reset" style="display: inline-block; height: 29px; position: relative; vertical-align: top; width: 42px;"><button class="w-vulcan-v2-button w-css-reset w-css-reset-tree w-css-reset-button-important" aria-label="Play Video" title="Play Video" style="background: rgba(84, 187, 255, 0.95); box-shadow: none; cursor: pointer; height: 100%; position: relative; width: 100%; transition: opacity 400ms ease 0s; opacity: 1;"><div class="w-vulcan-icon-wrapper" data-handle="smallPlayButton" style="box-sizing: border-box; height: 100%;"><div style="height: 100%; width: 100%;"><div style="display: none; height: 100%; width: 100%;"><svg x="0px" y="0px" viewBox="0 0 51.556 34" enable-background="new 0 0 51.556 34" focusable="false" class="w-css-reset w-css-reset-tree" style="fill: rgb(255, 255, 255); height: 100%; left: 0px; stroke-width: 0px; top: 0px; width: 100%;"><g><rect x="20" y="11.3" width="3.5" height="12"></rect><rect x="26.5" y="11.3" width="3.5" height="12"></rect></g></svg></div><div style="display: block; height: 100%; width: 100%;"><svg x="0px" y="0px" viewBox="0 0 51.556 34" enable-background="new 0 0 51.556 34" focusable="false" class="w-css-reset w-css-reset-tree" style="fill: rgb(255, 255, 255); height: 100%; left: 0px; stroke-width: 0px; top: 0px; width: 100%;"><polygon points="31.555999999999997,16.5 20,24 20,9"></polygon></svg></div></div></div></button></div></div></div></div><div class="w-bottom-bar-middle w-css-reset" style="display: table-cell; vertical-align: top; position: relative; width: 100%;"><div class="w-bottom-bar-middle-inner w-css-reset" style="height: 29px; position: relative; pointer-events: none; white-space: nowrap;"><div class="w-css-reset" data-handle="lowerPlaybar" style="height: 100%;"><div class="w-playbar-wrapper w-css-reset w-css-reset-tree" role="slider" aria-label="Playbar" aria-orientation="horizontal" aria-valuenow="0" aria-valuemin="0" aria-valuemax="540.04" aria-valuetext="0:00" tabindex="0" style="cursor: pointer; height: 100%; outline: none; position: relative;"><div style="display: block; height: 100%; overflow: hidden; pointer-events: none; position: relative; width: 396px;"><canvas width="396" height="29" style="height: 29px; left: 0px; pointer-events: none; position: absolute; top: 0px; width: 396px;"></canvas></div><div class="w-playbar__hoverMarker" style="background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.12) 100%); display: none; height: 100%; left: -36px; pointer-events: none; position: absolute; top: 0px; width: 36px;"></div><div class="w-playbar__focus-border" style="border: 2px solid rgb(255, 255, 255); display: none; height: 100%; left: 0px; pointer-events: none; position: absolute; top: 0px; width: 100%;"></div></div></div></div></div><div class="w-bottom-bar-right w-css-reset" style="display: table-cell; vertical-align: top; position: relative; width: 0px;"><div class="w-bottom-bar-right-inner w-css-reset" style="height: 29px; position: relative; pointer-events: none; white-space: nowrap;"><div class="w-css-reset" data-handle="volumeButton" style="display: inline-block; vertical-align: top;"><div class="w-vulcan-button-wrapper w-css-reset" style="display: inline-block; height: 29px; position: relative; vertical-align: top; width: 34px;"><button class="w-vulcan-v2-button w-css-reset w-css-reset-tree w-css-reset-button-important" aria-label="Mute" title="Mute" style="background: rgba(84, 187, 255, 0.95); box-shadow: none; cursor: pointer; height: 100%; position: relative; width: 100%; transition: opacity 400ms ease 0s; opacity: 1;"><div class="w-vulcan-icon-wrapper" data-handle="volumeButton" style="box-sizing: border-box; height: 100%;"><svg x="0px" y="0px" viewBox="0 0 40 34" enable-background="new 0 0 40 34" focusable="false" style="fill: rgb(255, 255, 255); height: 100%; left: 0px; stroke-width: 0px; top: 0px; width: 100%;"><g style="transform: translateX(1.25px); transition: transform 100ms ease 0s;"><g><path d="M13.8,14.2c-0.5,0.5-1.4,0.8-2,0.8h-1.6C9.5,15,9,15.5,9,16.2v1.6c0,0.7,0.5,1.2,1.2,1.2h1.6c0.7,0,1.6,0.4,2,0.8l2.3,2.3c0.5,0.5,0.8,0.3,0.8-0.4v-9.6c0-0.7-0.4-0.8-0.8-0.4L13.8,14.2z"></path></g><g><path fill="none" stroke="#ffffff" stroke-line-cap="round" stroke-miterlimit="10" stroke-width="2" d="M22,11.7c0,0,1.1,2.5,1.1,5s-1.1,5-1.1,5" style="opacity: 1; transition: opacity 100ms ease 0s;"></path><path fill="none" stroke="#ffffff" stroke-line-cap="round" stroke-miterlimit="10" stroke-width="2" d="M25.8,9.2c0,0,1.7,3.8,1.7,7.5c0,3.7-1.7,7.5-1.7,7.5" style="opacity: 1; transition: opacity 100ms ease 0s;"></path></g><g style="opacity: 0; transition: opacity 100ms ease 0s;"><line fill="none" stroke="#ffffff" stroke-line-cap="round" stroke-miterlimit="10" stroke-width="1.8102" x1="19.2" y1="15" x2="23.2" y2="19"></line><line fill="none" stroke="#ffffff" stroke-line-cap="round" stroke-miterlimit="10" stroke-width="1.8102" x1="19.2" y1="19" x2="23.2" y2="15"></line></g></g></svg></div></button></div></div><div class="w-css-reset" data-handle="settingsButton" style="display: inline-block; vertical-align: top;"><div class="w-vulcan-button-wrapper w-css-reset" style="display: inline-block; height: 29px; position: relative; vertical-align: top; width: 34px;"><button class="w-vulcan-v2-button w-css-reset w-css-reset-tree w-css-reset-button-important" aria-expanded="false" aria-label="Show settings menu" title="Show settings menu" style="background: rgba(84, 187, 255, 0.95); box-shadow: none; cursor: pointer; height: 100%; position: relative; width: 100%; transition: opacity 400ms ease 0s; opacity: 1;"><div class="w-vulcan-icon-wrapper" data-handle="settingsButton" style="box-sizing: border-box; height: 100%;"><svg x="0px" y="0px" viewBox="0 0 40 34" enable-background="new 0 0 40 34" focusable="false" style="fill: rgb(255, 255, 255); height: 100%; left: 0px; stroke-width: 0px; top: 0px; width: 100%;"><g><g><path d="M28.3,16.4h-1.9c-0.4,0-0.8-0.3-0.9-0.7l-0.4-1.1c-0.2-0.3-0.1-0.8,0.2-1.1l1.3-1.3c0.3-0.3,0.3-0.7,0-1l-0.4-0.4c-0.3-0.3-0.7-0.3-1,0l-1.3,1.3c-0.3,0.3-0.8,0.3-1.1,0.1l-1.1-0.5c-0.4-0.1-0.7-0.5-0.7-0.9V9.1c0-0.4-0.3-0.7-0.7-0.7h-0.6c-0.4,0-0.7,0.3-0.7,0.7v1.7c0,0.4-0.3,0.8-0.7,0.9l-1.2,0.5c-0.3,0.2-0.8,0.1-1.1-0.2l-1.2-1.2c-0.3-0.3-0.7-0.3-1,0l-0.4,0.4c-0.3,0.3-0.3,0.7,0,1l1.2,1.2c0.3,0.3,0.3,0.8,0.1,1.1l-0.5,1.2c-0.1,0.4-0.5,0.7-0.9,0.7h-1.6c-0.4,0-0.7,0.3-0.7,0.7v0.6c0,0.4,0.3,0.7,0.7,0.7h1.6c0.4,0,0.8,0.3,0.9,0.7l0.5,1.2c0.2,0.3,0.1,0.8-0.1,1.1l-1.2,1.2c-0.3,0.3-0.3,0.7,0,1l0.4,0.4c0.3,0.3,0.7,0.3,1,0l1.2-1.2c0.3-0.3,0.8-0.3,1.1-0.2l1.2,0.5c0.4,0.1,0.7,0.5,0.7,0.9v1.7c0,0.4,0.3,0.7,0.7,0.7h0.6c0.4,0,0.7-0.3,0.7-0.7V24c0-0.4,0.3-0.8,0.7-0.9l1.1-0.5c0.3-0.2,0.8-0.1,1.1,0.1l1.3,1.3c0.3,0.3,0.7,0.3,1,0l0.4-0.4c0.3-0.3,0.3-0.7,0-1l-1.3-1.3C25,21,25,20.5,25.1,20.2l0.4-1.1c0.1-0.4,0.5-0.7,0.9-0.7h1.9c0.4,0,0.7-0.3,0.7-0.7v-0.6C29,16.7,28.7,16.4,28.3,16.4z M23.8,17.5c0,2.2-1.8,3.9-3.9,3.9c-2.2,0-3.9-1.8-3.9-3.9s1.7-3.9,3.9-3.9C22.1,13.6,23.8,15.3,23.8,17.5z"></path></g></g></svg></div></button></div></div><div class="w-css-reset" data-handle="fullscreenButton" style="display: inline-block; vertical-align: top;"><div class="w-vulcan-button-wrapper w-css-reset" style="display: inline-block; height: 29px; position: relative; vertical-align: top; width: 34px;"><button class="w-vulcan-v2-button w-css-reset w-css-reset-tree w-css-reset-button-important" aria-label="Fullscreen" title="Fullscreen" style="background: rgba(84, 187, 255, 0.95); box-shadow: none; cursor: pointer; height: 100%; position: relative; width: 100%; transition: opacity 400ms ease 0s; opacity: 1;"><div class="w-vulcan-icon-wrapper" data-handle="fullscreenButton" style="box-sizing: border-box; height: 100%;"><svg x="0px" y="0px" viewBox="0 0 40 34" enable-background="new 0 0 40 34" focusable="false" style="fill: rgb(255, 255, 255); height: 100%; left: 0px; stroke-width: 0px; top: 0px; width: 100%;"><g><g><polyline fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="31.4,12.6 31.4,8.7 25.8,8.7"></polyline><polyline fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="14.7,8.7 9.1,8.7 9.1,12.6"></polyline><polyline fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="25.8,24.8 31.4,24.8 31.4,20.9"></polyline><polyline fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="9.1,20.9 9.1,24.8 14.7,24.8"></polyline></g><rect x="13.7" y="12.3" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" enable-background="new" width="13.3" height="8.9"></rect></g></svg></div></button></div></div></div></div></div></div><div class="w-foreground w-css-reset" style="height: 100%; left: 0px; pointer-events: none; position: absolute; top: 0px; width: 100%;"><div class="w-css-reset" data-handle="contextMenu" style="pointer-events: auto;"></div><div class="w-css-reset" data-handle="loadingHourglass" style="pointer-events: auto;"></div><div class="w-css-reset" data-handle="focusOutline" style="pointer-events: auto;"><div class="w-focus-outline" style="box-shadow: rgb(255, 255, 255) 0px 0px 0px 2px inset; display: none; height: 100%; left: 0px; pointer-events: none; position: absolute; right: 0px; width: 100%;"></div></div></div></div></div></div><div id="wistia_grid_31_front"></div><div id="wistia_grid_31_top_inside"><div id="wistia_grid_31_top" style="height: 0px; font-size: 0px; line-height: 0px;"> </div></div><div id="wistia_grid_31_bottom_inside"><div id="wistia_grid_31_bottom" style="height: 0px; font-size: 0px; line-height: 0px;"> </div></div><div id="wistia_grid_31_left_inside"><div id="wistia_grid_31_left" style="height: 0px; font-size: 0px; line-height: 0px;"> </div></div><div id="wistia_grid_31_right_inside"><div id="wistia_grid_31_right" style="height: 0px; font-size: 0px; line-height: 0px;"> </div></div></div><div id="wistia_grid_31_below" style="height: 0px; font-size: 0px; line-height: 0px;"> </div><style id="wistia_32_style" type="text/css" class="wistia_injected_style">#wistia_grid_31_wrapper{-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;font-family:Arial,sans-serif;font-size:14px;height:100%;position:relative;text-align:left;width:100%;}
+#wistia_grid_31_wrapper *{-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}
+#wistia_grid_31_above{position:relative;}
+#wistia_grid_31_main{display:block;height:100%;position:relative;}
+#wistia_grid_31_behind{height:100%;left:0;position:absolute;top:0;width:100%;}
+#wistia_grid_31_center{height:100%;overflow:hidden;position:relative;width:100%;}
+#wistia_grid_31_front{display:none;height:100%;left:0;position:absolute;top:0;width:100%;}
+#wistia_grid_31_top_inside{position:absolute;left:0;top:0;width:100%;}
+#wistia_grid_31_top{width:100%;position:absolute;bottom:0;left:0;}
+#wistia_grid_31_bottom_inside{position:absolute;left:0;bottom:0;width:100%;}
+#wistia_grid_31_bottom{width:100%;position:absolute;top:0;left:0;}
+#wistia_grid_31_left_inside{height:100%;position:absolute;left:0;top:0;}
+#wistia_grid_31_left{height:100%;position:absolute;right:0;top:0;}
+#wistia_grid_31_right_inside{height:100%;right:0;position:absolute;top:0;}
+#wistia_grid_31_right{height:100%;left:0;position:absolute;top:0;}
+#wistia_grid_31_below{position:relative;}</style></div></div></div>
+                    </div>
+                </div>
+                <div class="asseen">
+                    <img src="assets/images/as-seen-on.jpg"  class="lazyload img-fluid">
+                </div>
+                <br><br>
+                <ul class="fa-ul">
+                    <li><span class="fa-li"><i class="fas fa-ban"></i></span> <strong>NO ADDED FLAVORS</strong> : Added
+                        flavors can consist of harmful un-necessary ingredients<br><br></li>
+                    <li><span class="fa-li"><i class="fas fa-ban"></i></span> <strong>NO ADDED INGREDIENTS</strong> :
+                        You won't find any GMO or added fillers to our product. Only Pure Full Spectrum, Water Soluable
+                        CBD Oil!<br><br></li>
+                    <li><span class="fa-li"><i class="fas fa-ban"></i></span><strong> NO PESTICIDES OR HARMFUL
+                            CHEMICALS</strong> : We use only organically grown hemp oil that you can trace back to the
+                        field!<br><br></li>
+                    <li><span class="fa-li"><i class="fas fa-ban"></i></span><strong> NO THC</strong> : Our product is
+                        3rd party tested and verified to have ZERO THC. It is 100% Legal to use in all 50
+                        States.<br><br></li>
+                    <li><span class="fa-li"><i class="fas fa-ban"></i></span><strong> NOT WATERED DOWN</strong> : We do
+                        not try and dilute our CBD in order to make more profit. We are proud of our 100% Pure CBD Oil
+                        direct from the source.<br><br></li>
+
+                </ul>
+                <hr>
+                <br>
+                <ul class="fa-ul grul">
+                    <li><span class="fa-li"><i class="fas fa-check-circle"></i></span> <strong>FULL SPECTRUM
+                            CBD</strong> : Added flavors can consist of harmful un-necessary ingredients<br><br></li>
+                    <li><span class="fa-li"><i class="fas fa-check-circle"></i></span> <strong>ORGANICALLY GROWN
+                            HEMP</strong> : You won't find any GMO or added fillers to our product. Only Pure Full
+                        Spectrum, Water Soluable CBD Oil!<br><br></li>
+                    <li><span class="fa-li"><i class="fas fa-check-circle"></i></span><strong> TESTED FOR PURITY &amp;
+                            QUALITY</strong> : We use only organically grown hemp oil that you can trace back to the
+                        field!<br><br></li>
+                    <li><span class="fa-li"><i class="fas fa-check-circle"></i></span><strong> MADE IN THE USA</strong>
+                        : Our product is 3rd party tested and verified to have ZERO THC. It is 100% Legal to use in all
+                        50 States.<br><br></li>
+                    <li><span class="fa-li"><i class="fas fa-check-circle"></i></span><strong> GMP CERTIFIED &amp; FDA
+                            APPROVED LABORATORY</strong> : We do not try and dilute our CBD in order to make more
+                        profit. We are proud of our 100% Pure CBD Oil direct from the source.<br><br></li>
+                    <li><span class="fa-li"><i class="fas fa-check-circle"></i></span><strong> 100% LEGAL IN ALL 50
+                            STATES</strong> : Our CBD contains Zero THC and will not show up on a drug test. Use it with
+                        a piece of mind!<br><br></li>
+
+                </ul>
+                <br><br>
+                <a href="#ordernow"><img src="assets/images/mid-cta-product.png"  class="lazyload img-fluid d-block mx-auto"></a>
+            </div>
+
+            <div class="col-md-12">
+                <div class="padme">&nbsp;</div>
+                <div class="col-md-8 offset-md-2 col-sm-12 fbbox" style="padding:0;">
+                    <div>
+                        <img src="assets/images/screentop.png"  class="lazyload img-fluid" width="100%">
+                    </div>
+                    <div class="fbboxInner">
+                        <div class="row subrecent">
+                            <div class="col">
+                                <a href="#" target="_blank" class="pull-left">Recent # Comments</a>
+                            </div>
+                            <div class="col ">
+                                <p class="text-right subrecent">Add a comment</p>
+                            </div>
+                        </div>
+
+                        <div class="media no-border-top">
+                            <div class="media-left">
+                                <a href="#" target="_blank">
+                                    <img src="assets/images/lewis.jpg"  class="lazyload">
+                                </a>
+
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading"><a href="#" target="_blank">Shayla Lewis</a></h4>
+                                <p>
+                                    this stuff really helps with my anxiety - plus my doctor said my blood sugar levels
+                                    are great now!
+                                </p>
+                                <p class="bottom">Reply. <span class="like">13 . Like .</span> <span class="time">12 minutes ago</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="media">
+                            <div class="media-left">
+                                <a href="#" target="_blank">
+                                    <img src="assets/images/tanya.jpg"  alt="" class="lazyload">
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading"><a href="" target="_blank">Tanya
+                                        Porquez</a></h4>
+                                <p>
+                                    My husband and I started using this a few weeks ago - already we are both able to
+                                    get out of bed without our usual aches and pains. I normally had to take several
+                                    asprin a day for my back - now - nothing!
+                                </p>
+                                <p class="bottom">Reply. <span class="like">6 . Like .</span> <span class="time">13 minutes ago</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="media p-b-0">
+                            <div class="media-left">
+                                <a href="" target="_blank">
+                                    <img class="lazyload media-object" src="assets/images/jenni.jpg"  alt="">
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading"><a href="" target="_blank">Jennifer
+                                        Jackson Mercer</a></h4>
+                                <p>
+                                    A friend of mine used and recommended it
+                                    to me 3 weeks ago. I ordered the product and received it within 3
+                                    days. The results have
+                                    been incredible and I can't wait to see what weeks 3 and 4 bring.
+                                </p>
+                                <p class="bottom m-b-8">Reply. <span class="like">19 . Like .</span> <span class="time">25 minutes ago</span>
+                                </p>
+                                <div class="media">
+                                    <div class="media-left">
+                                        <a href="" target="_blank">
+                                            <img src="assets/images/cash.jpg"  alt="" class="lazyload">
+                                        </a>
+                                    </div>
+                                    <div class="media-body">
+                                        <h4 class="media-heading"><a href="" target="_blank">Kristy
+                                                Cash</a></h4>
+                                        <p>I wish I knew about this product before! It would have saved a heck of a lot
+                                            of pain!</p>
+                                        <p class="bottom">Reply. <span class="like"> Like .</span> <span class="time">46 minutes ago</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="media">
+                            <div class="media-left">
+                                <a href="" target="_blank">
+                                    <img class="lazyload media-object" src="assets/images/katy.jpg"  alt="">
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading"><a href="" target="_blank">Katy
+                                        Barrott</a></h4>
+                                <p>I can't believe this is so good! I am very much pleased after using this product.</p>
+                                <p class="bottom">Reply. <span class="like">43 . Like .</span> <span class="time">about an hour ago</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="media">
+                            <div class="media-left">
+                                <a href="" target="_blank">
+                                    <img class="lazyload media-object" src="assets/images/herbalistoils-clean/amanda.jpg"  alt="">
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading"><a href="" target="_blank">Amanda
+                                        Gibson</a></h4>
+                                <p>I saw this on the news. How lucky am I
+                                    to have been given this opportunity!?!?! Thank you for sharing this deal! I was
+                                    going to order the full price bottles and glad I waited. I just ordered 3 and got 2
+                                    free!!! ❤️❤️❤️❤️❤️..</p>
+                                <p class="bottom">Reply. <span class="like">3 . Like .</span> <span class="time">1 hour ago</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="media">
+                            <div class="media-left">
+                                <a href="" target="_blank">
+                                    <img class="lazyload media-object" src="assets/images/julie.jpg"  alt="">
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading"><a href="" target="_blank">Julie Keyse</a>
+                                </h4>
+                                <p>Hi, thanks for the post, I got a bottle for my hubby. This stuff is like a miracle...
+                                    he has been feeling less pain and been in a better mood all month - I'm defintly
+                                    ordering more of this stufff ????????????????????</p>
+                                <p class="bottom">Reply. <span class="like"> Like .</span> <span class="time">2 hours ago</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="media">
+                            <div class="media-left">
+                                <a href="" target="_blank">
+                                    <img class="lazyload media-object" src="assets/images/sarah.jpg"  alt="">
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading"><a href="" target="_blank">Sarah
+                                        Williams</a></h4>
+                                <p>My sister did this a few months ago, I
+                                    waited to order my bottle to see if it really worked and then they ran
+                                    out! what a dumb move that turned out to be. Glad to see it's back
+                                    again, I wont make the same mistake.</p>
+                                <p class="bottom">Reply. <span class="like">12 . Like .</span> <span class="time">2 hours ago</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="media">
+                            <div class="media-left">
+                                <a href="" target="_blank">
+                                    <img class="lazyload media-object" src="assets/images/kirs.jpg"  alt="">
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading"><a href="" target="_blank">Kirsten Bauman
+                                        Riley</a></h4>
+                                <p>I'm going to give this product a chance
+                                    to work its magic on me. I've tried everything out there and so far
+                                    nothing has been good enough to help me.</p>
+                                <p class="bottom">Reply. <span class="like">30 . Like .</span> <span class="time">2 hours ago</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row subrecent">
+                            <div class="col">
+                                <a href="#" target="_blank" class="pull-left small"># Social Plugin</a>
+                            </div>
+
+                        </div>
+                        <!--/fb Inner-->
+                    </div>
+                </div>
+            </div>
+            <!--end col12-->
+            <div class="col-md-8 offset-md-2 col-sm-12 text-center">
+                <br><br>
+                <h3>This Offer Won't Last. Join Others enjoying the benefits of Herbalist Oils CBD 100% Risk Free. </h3>
+                <br><br><img class="lazyload" src="assets/images/dont-miss.png">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid blubg lazyload">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 text-center">
+                <img src="assets/images/top-arrow.png"  class="lazyload d-block mx-auto">
+            </div>
+            <div class="col-sm-6"><br>
+                <img src="assets/images/featureingredient.png"  class="lazyload img-fluid d-block mx-auto">
+            </div>
+            <div class="col-sm-6" style="display:table-cell;vertical-align: middle;">
+                <div class="padme">&nbsp;</div>
+                <img src="assets/images/features-gfx.png"  class="lazyload img-fluid">
+                <h1>Hurry! While Supplies Last!</h1>
+                <p>Don't wait. Guarantee your order now. Enjoy only the finest organically sourced CBD oil means you
+                    will experience all that CBD has to offer in it's purest form. </p>
+                <br>
+                <div class="mobi-buttons-hide">
+                <a href="#ordernow">
+                    <button class="btn btn-success btn-lg heartbeat">ORDER NOW!</button>
+                </a>
+                </div>
+                 <div class="mobi-buttons-display">
+                <a href="https://offer.pureherbalistoils.com/gen/processor/8">
+                    <button class="btn btn-success btn-lg heartbeat">ORDER NOW!</button>
+                </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid alternatebg">
+    <div class="container">
+        <div class="row">
+            <div class="col-8 offset-2 text-center">
+                <div class="padme">&nbsp;</div>
+                <img src="assets/images/plus.png"  class="lazyload d-block mx-auto"><br>
+                <h1>No Questions Asked Refund Policy.</h1>
+                <h5>Customer Satisfaction is our priority</h5>
+                <br>
+                <p>There are many CBD oil brands on the market, but none compare to Herbalist Oils and we know it. We
+                    are confident in our CBD and know it will benefit you and your loved ones. If you are unhappy with a
+                    product, simply return it within 60 days of receiving it and we’ll give you a full refund. That's
+                    right, we will even buy your empty bottle back from you.
+                    It’s that simple. </p>
+                <br><br>Click below to claim your bottle:
+                <div class="mobi-buttons-hide"> <a href="#ordernow"><h2 style="color:#00b100;">ORDER NOW</h2></a></div>
+                <div class="mobi-buttons-display"> <a href="https://offer.pureherbalistoils.com/gen/processor/8"><h2 style="color:#00b100;">ORDER NOW</h2></a></div>
+                <br><br><br>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="container-fluid" style="border-bottom:1px solid #ccc;">
+    <div class="container">
+        <div class="row">
+            
+            <div class="col-12 mobi-buttons-hide">
+                <a href="#ordernow"><img src="assets/images/footer.png" class="mx-auto d-block img-fluid"></a>
+                <br><br>
+            </div>
+            <div class="col-12 mobi-buttons-display">
+                <a href="https://offer.pureherbalistoils.com/gen/processor/8"><img src="assets/images/footer.png" class="mx-auto d-block img-fluid"></a>
+                <br><br>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="padme">&nbsp;</div>
+
+        </div>
+        <div class="col-sm-6 text-center">
+            <img src="assets/images/logo-wb.png"  class="lazyload img-fluid">
+        </div>
+        <div class="col-sm-6 text-center">
+            <img src="assets/images/website-secure.png"  class="lazyload">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12 columns">
+            <div class="footer">
+                <div class="text-center"><br><br><div style="font-size:12px;"><input type="checkbox" style="margin: 0;" checked=""> By providing my phone number and submitting my information to continue, I verify this is my number and consent to text messages via automated systems, regarding order status, marketing or promotional offers and related transactions. Message and Data rates may apply. 1 msgs/day. Reply STOP to stop.</div><br>
+                    <p style="font-size:11px;">*The statements made on our websites have not been evaluated by the FDA
+                        (U.S. Food &amp; Drug Administration). Our products are not intended to diagnose, cure or
+                        prevent any disease. The information provided by this website or this company is not a
+                        substitute for a face-to-face consultation with your physician, and should not be construed as
+                        individual medical advice. The testimonials on this website are individual cases and do not
+                        guarantee that you will get the same results. Due to the nature of this product and to protect
+                        the privacy of the individuals, actual names and photographs of the individuals depicted in the
+                        testimonials have been changed. Individuals are remunerated.</p>
+                </div>
+                <div class="text-center">
+                    <p style="font-size:11px;"> ©
+                        <span class="copy-right-year"></span><span class="product-name">Plant Pure, LLC</span>. All
+                        Rights Reserved.</p>
+                </div>
+                <div class="text-center">
+                    <p class="policy-links">
+                        <a href="terms.html" class="bridge-modal">Terms and Conditions</a> |
+                        <a href="privacy.html" class="bridge-modal">Privacy Policy</a> | 
+                        <a href="contact.html" class="bridge-modal" >Contact
+                            Us  </a>
+
+                    </p>
+                </div>
+            </div>
+            <br>
+            <br>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+<script src="assets/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous" defer=""></script>
+
+
+
+
+<style id="wistia_18_style" type="text/css" class="wistia_injected_style">
+@font-face {
+font-family: 'WistiaPlayerOverpassNumbers';
+src: url(data:application/x-font-ttf;charset=utf-8;base64,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);
+}
+</style>
+<div id="someone-purchased" class="fomo-notification-position-bottom-left fomo-notification-animation-vertical fomo-notification-mobile-position-bottom fomo-notification-v2-curved fomo-notification fomo-notification-font-lg fomo-notification-hide" style="margin-left: 0px; display: block;">
+    <div class="fomo-notification-container" style="display:inline">
+        <div style="display:inline" class="fomo-notification-image-wrapper">
+            <div class="fomo-notification-image-wrapper-inside">
+                <img onerror="document.getElementById(&#39;someone-purchased&#39;).className += &#39; fomo-notification-no-image&#39;;" class="fomo-notification-image " src="assets/images/dc2b100b3511e362b8f09c0233c0fe93" style="cursor: default;">
+            </div>
+        </div>
+        <div style="display:inline" class="fomo-notification-content-wrapper">
+            <p class="fomo-notification-content">Terry - Just placed their RISK FREE Order!</p>
+        </div>
+    </div>
+</div>
+</body>
+</html>
